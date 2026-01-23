@@ -1,0 +1,17 @@
+const navLinks = document.querySelectorAll('#menu ul a.link');
+navLinks.forEach (link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute
+        ('href'));
+        if (target) {
+            const headerHeight = document.querySelector('header').
+            offsetHeight;
+            const targetPosition = target.offsetTop - headerHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
