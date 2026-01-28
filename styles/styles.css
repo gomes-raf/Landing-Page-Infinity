@@ -12,6 +12,7 @@
 body{
     margin: 0;
     background-color: transparent;
+    overflow-x: hidden;
 }
 
 header{
@@ -20,7 +21,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(var(--quaternary-color-rgb), 0.8);
+    background-color: rgba(var(--quaternary-color-rgb), 0.95);
     padding: 0px 90px;
     position: sticky;
     top: 0;
@@ -35,6 +36,7 @@ li{
 
 li:hover{
     color: var(--hover-color);
+    transition: 0.3s;
 }
 
 section#Top::before{
@@ -108,13 +110,13 @@ section#About{
     flex-direction: row;
     background-color: var(--quaternary-color);
     width: 100%;
-    height: 555px;
+    height: 623px;
 }
 
 
 section#About .text{
-    position: absolute;
-    top: 620px;
+    position: relative;
+    top: 90px;
 }
 
 section#About .subtitle{
@@ -128,11 +130,11 @@ section#About .subtitle{
 
 .triangle{
     width: 900px;
-    height: 555px;
+    height: 623px;
     left: 364.5px;
 
     overflow: hidden; 
-    position: relative;
+    position: absolute;
 
     clip-path: polygon(
     40% 0,
@@ -169,7 +171,179 @@ section#About::before{
     );
     filter: blur(40px);
     top: 700px;
-    left: 180px;
+    left: 200px;
     z-index: 0;
     rotate: -50deg;
+}
+
+section#About2 .title {
+    color: var(--tertiary-color);
+    }
+
+section#About2 .title2 {
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    line-height: 10px;
+    color: var(--primary-color);
+    }
+
+section#About2 .subtitle {
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 5px;
+    position: relative;
+    max-width: 350px;
+    top: 35px;
+    left: 30px;
+    line-height: 30px;
+    z-index: 1;
+    color: var(--primary-color);
+}
+
+section#About2{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 623px;
+}
+
+section#About2 .text{
+    position: relative;
+    top: 90px;
+}
+
+.p-triangle{
+    width: 900px;
+    height: 623px;
+    left: 364.5px;
+
+    overflow: hidden; 
+    position: absolute;
+
+    clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    40% 100%
+    );
+}
+
+.p-triangle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#About2 .p-triangle::before{
+    content: "";  
+    position: absolute;
+    inset: 0;
+    background-color: rgba(var(--quaternary-color-rgb), 0.8);
+}
+
+section#About2::before{
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(210, 174, 109, 0.6) 0%,
+        rgba(210, 174, 109, 0.35) 30%,
+        rgba(210, 174, 109, 0.15) 55%,
+        transparent 70%
+    );
+    filter: blur(40px);
+    top: 1300px;
+    left: 90px;
+    z-index: 0;
+    rotate: 50deg;
+}
+
+/* Portfolio */
+
+section#Portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 2283px;
+}
+
+section#Portfolio .text{
+    position: relative;
+    top: 90px;
+}
+
+section#Portfolio .title {
+    color: var(--tertiary-color);
+    }
+
+section#Portfolio .title2 {
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    line-height: 10px;
+    color: var(--secondary-color);
+    }
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+
+    width: 270px;
+    height: 350px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    position: relative;
+    top: 100px;
+}
+.card1:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+.card1-title{
+    color: var(--tertiary-color);
+    margin-top: -4px;
+    padding: 4px;
+    background-color: var(--primary-color);
+}
+
+.card2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+
+    width: 270px;
+    height: 350px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    position: relative;
+    top: 100px;
+}
+.card2:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+.card2-title{
+    color: var(--tertiary-color);
+    margin-top: -4px;
+    padding: 4px;
+    background-color: var(--primary-color);
 }
