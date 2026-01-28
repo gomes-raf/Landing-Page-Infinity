@@ -15,6 +15,25 @@ body{
     overflow-x: hidden;
 }
 
+.text{
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    color: var(--secondary-color);
+}
+
+.text a{
+    color: var(--tertiary-color);
+}
+
+.title {
+    font-family: "Anton", sans-serif;
+    font-size: 25px;
+    line-height: 10px;
+    }
+
+/* Header */
+
 header{
     font-family: "Libre Baskerville", serif;
     display: flex;
@@ -38,6 +57,10 @@ li:hover{
     color: var(--hover-color);
     transition: 0.3s;
 }
+
+/* Sections */
+
+/* Top */
 
 section#Top::before{
     content: "";
@@ -70,22 +93,7 @@ section#Top .background::before{
     background-color: rgba(var(--quaternary-color-rgb), 0.9);
 }
 
-.text{
-    position: absolute;
-    top: 300px;
-    left: 80px;
-    color: var(--secondary-color);
-}
-
-.text a{
-    color: var(--tertiary-color);
-}
-
-.title {
-    font-family: "Anton", sans-serif;
-    font-size: 25px;
-    line-height: 10px;
-    }
+/* About */
 
 section#About .title {
     color: var(--tertiary-color);
@@ -232,7 +240,8 @@ section#About2 .text{
 
 .p-triangle img {
     width: 100%;
-    height: 100%;
+    height: 130%;
+    margin-top: -160px;
     object-fit: cover;
 }
 
@@ -269,7 +278,7 @@ section#Portfolio{
     flex-direction: column;
     background-color: var(--primary-color);
     width: 100%;
-    height: 2283px;
+    height: 2000px;
 }
 
 section#Portfolio .text{
@@ -282,13 +291,10 @@ section#Portfolio .title {
     }
 
 section#Portfolio .title2 {
-    font-family: "Anton", sans-serif;
-    font-size: 20px;
-    line-height: 10px;
     color: var(--secondary-color);
     }
 
-.row1 {
+.row {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -296,7 +302,7 @@ section#Portfolio .title2 {
     gap: 50px;
 }
 
-.card1 {
+.card {
     font-family: "Libre Baskerville", serif;
     font-weight: bold;
     text-align: center;
@@ -306,44 +312,154 @@ section#Portfolio .title2 {
     height: 350px;
     background-color: var(--secondary-color);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
     margin: 20px;
+    margin-top: 40px;
     position: relative;
     top: 100px;
 }
-.card1:hover {
+.card:hover {
     transform: scale(1.01);
     transition: transform 0.3s;
 }
-.card1-title{
+.card-title{
     color: var(--tertiary-color);
     margin-top: -4px;
     padding: 4px;
     background-color: var(--primary-color);
 }
+.description{
+    max-width: 240px;
+    margin: auto;
+}
 
-.card2 {
-    font-family: "Libre Baskerville", serif;
-    font-weight: bold;
-    text-align: center;
-    color: var(--primary-color);
+/* Contacts */
 
-    width: 270px;
-    height: 350px;
+section#Contacts{
+    width: 100%;
+    height: 623px;
     background-color: var(--secondary-color);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    position: relative;
-    top: 100px;
+    margin-top: -34px;
 }
-.card2:hover {
+
+section#Contacts .text{
+    position: relative;
+    top: 120px;
+    color: var(--secondary-color);
+}
+
+section#Contacts .title {
+    color: var(--tertiary-color);
+}
+
+section#Contacts .title2 {
+    color: var(--primary-color);
+    font-size: 20px;
+    }
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+    top: 160px;
+    left: 100px;
+    margin-top: 20px;
+}
+
+.box1{
+    display: flex;
+    gap: 15px;
+    width: 170px;
+    height: 40px;   
+    background-color: var(--secondary-color);
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    color: var(--primary-color);
+    font-family: "Libre Baskerville", "sans-serif";
+    font-weight: bold;
+    font-size: 20px;
+}
+.box1 img{
+    margin-left: 10px;
+}
+.box1:hover{
     transform: scale(1.01);
     transition: transform 0.3s;
 }
-.card2-title{
-    color: var(--tertiary-color);
-    margin-top: -4px;
-    padding: 4px;
-    background-color: var(--primary-color);
+
+.box2{
+    display: flex;
+    gap: 20px;
+    width: 340px;
+    height: 40px;   
+    background-color: var(--secondary-color);
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    color: var(--primary-color);
+    font-family: "Libre Baskerville", "sans-serif";
+    font-weight: bold;
+    font-size: 20px;
+}
+.box2:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s;
+}
+
+section#Contacts .tucan{
+    position: relative;
+    margin-top: -200px;
+    margin-left: 800px;
+}
+
+/* Footer */
+
+.footer1{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: var(--quaternary-color);
+    color: var(--secondary-color);
+    padding: 20px 0;
+    font-family: "Libre Baskerville", serif;
+}
+
+.footer1 img{
+    position: relative;
+    top: 100px;
+    left: 80px;
+}
+
+.footer1 p{
+    position: relative;
+    top: 100px;
+    max-width: 360px;
+    left: 80px;
+    font-size: 20px;
+}
+
+.footer2{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: var(--quaternary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Libre Baskerville", serif;
+    margin-top: 0.2px;
+}
+
+.map{
+    position: relative;
+    top: -180px;
+    left: 700px;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
 }
