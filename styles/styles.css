@@ -93,6 +93,16 @@ section#Top .background::before{
     background-color: rgba(var(--quaternary-color-rgb), 0.9);
 }
 
+section#Top .title{
+    line-height: 40px;
+    max-width: 900px;
+}
+section#Top .subtitle{
+    line-height: 20px;
+    max-width: 700px;
+    margin-top: -10px;
+}
+
 /* About */
 
 section#About .title {
@@ -414,7 +424,7 @@ section#Contacts .title2 {
 
 section#Contacts .tucan{
     position: relative;
-    margin-top: -200px;
+    margin-top: -180px;
     margin-left: 800px;
 }
 
@@ -462,4 +472,5 @@ section#Contacts .tucan{
     left: 700px;
     border: 2px solid var(--tertiary-color);
     border-radius: 10px;
+    display: block;
 }

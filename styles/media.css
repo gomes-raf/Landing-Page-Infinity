@@ -1,0 +1,46 @@
+@media screen and (max-width: 760px) {
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+
+    }
+
+    ul{
+        display: flex;
+        font-size: 15px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .subtitle{
+        font-size: 14px;
+        position: relative;
+        top: -35px;
+        left: -30px;
+        max-width: 450px;
+        line-height: 20px;
+    }
+
+    section#Top{
+        width: 400%;
+        height: 100%;
+        margin-top: -18px;
+        display: flex;
+    }
+    section#Top .title{
+        line-height: 35px;
+        position: relative;
+        top: -40px;
+        left: -30px;
+    }
+
+}
